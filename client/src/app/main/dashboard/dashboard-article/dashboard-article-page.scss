@@ -1,0 +1,12 @@
+.dashboard-article-page {
+
+    &__last-edited {
+        font-style: italic;
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    &_wrapped {
+        padding: 0 15px;
+    }
+}

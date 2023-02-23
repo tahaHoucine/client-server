@@ -1,0 +1,20 @@
+.login-widget {
+
+    &__container {
+        height: 361px;
+    }
+
+    &__inputs {
+        display: inline-block;
+        margin: 0 auto 20px;
+        text-align: left;
+    }
+
+    &__forgot-password {
+        margin-top: 20px;
+    }
+
+    &__message {
+        margin-top: 18px;
+    }
+}

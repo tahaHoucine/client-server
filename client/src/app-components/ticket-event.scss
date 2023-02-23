@@ -1,0 +1,179 @@
+@import "../scss/vars";
+
+.ticket-event {
+    margin-top: 20px;
+    text-align: left;
+    position: relative;
+
+    &__connector {
+        position: absolute;
+        background-color: $light-grey;
+        width: 3px;
+        height: 100%;
+        top: 38px;
+        left: 33px;
+        z-index: 0;
+    }
+
+    &__staff-pic {
+        vertical-align: top;
+        background-color: $secondary-blue;
+        color: white;
+        border-radius: 5px;
+        width: 42px;
+        height: 42px;
+        overflow: hidden;
+        position: relative;
+        border: 2px solid $light-grey;
+
+        &-img {
+            position: absolute;
+            height: 100%;
+            left: 50%;
+            transform: translate(-50%, 0)
+        }
+    }
+
+    &__icon {
+        vertical-align: top;
+        background-color: $secondary-blue;
+        color: white;
+        border-radius: 5px;
+        width: 42px;
+        height: 42px;
+        padding-left: 8px;
+        padding-top: 4px;
+    }
+
+    &__comment {
+        position: relative;
+        word-break: break-all;
+
+        &-pointer {
+            right: 100%;
+            border: solid transparent;
+            position: absolute;
+            border-right-color: $light-grey;
+            border-width: 13px;
+            margin-top: 8px;
+        }
+
+        &-author {
+            text-align: left;
+            float: left;
+            position: relative;
+            padding: 12px;
+            color: $primary-black;
+
+            &-type {
+                font-size: 10px;
+                padding-left: 10px;
+                color: $secondary-blue;
+                font-variant: small-caps;
+            }
+        }
+
+        &-date {
+            text-align: right;
+            border: 2px solid $light-grey;
+            border-bottom: none;
+            padding: 12px;
+            background-color: $light-grey;
+
+        }
+
+        &-content {
+            background-color: white;
+            border: 2px solid $very-light-grey;
+            border-top: none;
+            padding: 20px 10px;
+            text-align: left;
+        }
+    }
+
+    &__file {
+        background-color: $very-light-grey;
+        cursor: pointer;
+        text-align: right;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    &_staff {
+        .ticket-event__icon {
+            background-color: $primary-blue;
+        }
+
+        .ticket-event__comment-author-type {
+            color: $primary-blue;
+        }
+    }
+
+    &_circled {
+        margin-top: 35px;
+        margin-bottom: 30px;
+
+        .ticket-event__connector {
+            top: 28px;
+        }
+
+        .ticket-event__icon {
+            background-color: white;
+            color: $primary-black;
+            border: 3px solid $light-grey;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            padding-left: 8px;
+            padding-top: 4px;
+            margin-left: 2px;
+            margin-top: -8px;
+        }
+
+        .ticket-event__circled {
+            color: $primary-black;
+            font-size: $font-size--sm;
+            margin-top: 1px;
+        }
+
+        .ticket-event__circled-author {
+            color: $secondary-blue;
+        }
+
+        .ticket-event__circled-indication {
+            color: $primary-green;
+        }
+    }
+
+    &_unassignment {
+        .ticket-event__icon {
+            padding-left: 6px;
+        }
+    }
+
+    &_close {
+        .ticket-event__icon {
+            padding-left: 9px;
+        }
+    }
+
+    &_reopen {
+        .ticket-event__icon {
+            padding-left: 9px;
+            padding-top: 5px;
+        }
+    }
+
+    &_department {
+        .ticket-event__icon {
+            padding-left: 6px;
+        }
+    }
+
+    &_priority {
+        .ticket-event__icon {
+            padding-left: 11px;
+            padding-top: 5px;
+        }
+    }
+}

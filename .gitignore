@@ -1,0 +1,4 @@
+server/composer.lock
+server/vendor
+.idea
+.jshintrc

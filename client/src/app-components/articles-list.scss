@@ -1,0 +1,14 @@
+@import "../scss/vars";
+
+.articles-list {
+
+    &__add {
+        position: relative;
+    }
+
+    &__add-icon {
+        position: absolute;
+        left: 10px;
+        margin-top: -4px;
+    }
+}
